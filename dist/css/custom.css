@@ -1,0 +1,28 @@
+.color-red {
+	color: red;
+}
+.color-green {
+	color: green;
+}
+.hide-me {
+	display: none;
+}
+
+#ProfileImageBtn,
+#ProfileVideoBtn {
+	display: none;
+}
+
+.box-comments {
+	display: none;
+}
+
+.commentBtn {
+	cursor: pointer;
+}
+
+.photo {
+	max-height: 100px;
+	width: auto;
+	margin: auto;
+}

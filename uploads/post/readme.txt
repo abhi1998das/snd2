@@ -1,0 +1,1 @@
+This is sample file. All post related uploads will be saved in this folder.
