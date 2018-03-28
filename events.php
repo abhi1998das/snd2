@@ -40,7 +40,7 @@ $_SESSION['callFrom'] = "events.php";
   <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.min.css">
   <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.print.min.css" media="print">
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+   <link rel="stylesheet" href="dist/css/AdminLTE.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
@@ -55,6 +55,7 @@ $_SESSION['callFrom'] = "events.php";
   <!-- Google Font -->
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+		<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">

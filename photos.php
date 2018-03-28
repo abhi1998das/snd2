@@ -38,7 +38,7 @@ $_SESSION['callFrom'] = "photos.php";
   <!-- Font Awesome -->
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+   <link rel="stylesheet" href="dist/css/AdminLTE.css">
   <link rel="stylesheet" href="dist/css/custom.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->

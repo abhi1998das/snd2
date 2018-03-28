@@ -1,14 +1,4 @@
-/*!
- *   AdminLTE v2.4.0
- *   Author: Almsaeed Studio
- *	 Website: Almsaeed Studio <https://adminlte.io>
- *   License: Open source - MIT
- *           Please visit http://opensource.org/licenses/MIT for more information
- */
-/*
- * Core: General Layout Style
- * -------------------------
- */
+
 html,
 body {
   height: 100%;
@@ -18,7 +8,7 @@ body {
   height: 100%;
 }
 body {
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: font-family: 'Muli', sans-serif;
   font-weight: 400;
   overflow-x: hidden;
   overflow-y: auto;
@@ -48,9 +38,7 @@ body {
 .layout-boxed {
   background: url('../img/boxed-bg.jpg') repeat fixed;
 }
-/*
- * Content Wrapper - contains the main content
- */
+
 .content-wrapper,
 .main-footer {
   -webkit-transition: -webkit-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
@@ -285,12 +273,12 @@ a:focus {
   transition: width 0.3s ease-in-out;
   display: block;
   float: left;
-  height: 50px;
-  font-size: 20px;
-  line-height: 50px;
+  height: 55px;
+  font-size: 15px;
+  line-height: 60px;
   text-align: center;
   width: 230px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Muli', "Helvetica", Arial, sans-serif;
   padding: 0 15px;
   font-weight: 300;
   overflow: hidden;
@@ -459,7 +447,7 @@ a:focus {
 .user-panel {
   position: relative;
   width: 100%;
-  padding: 10px;
+  padding: 18px;
   overflow: hidden;
 }
 .user-panel:before,
@@ -476,13 +464,13 @@ a:focus {
   height: auto;
 }
 .user-panel > .info {
-  padding: 5px 5px 5px 15px;
+  padding: 3px 3px 3px 11px;
   line-height: 1;
   position: absolute;
   left: 55px;
 }
 .user-panel > .info > p {
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 9px;
 }
 .user-panel > .info > a {
@@ -603,7 +591,7 @@ a:focus {
     display: block;
     margin-left: -15px;
     margin-right: -15px;
-    font-size: 18px;
+    font-size: 20px;
   }
   .sidebar-mini.sidebar-collapse .main-header .logo > .logo-lg {
     display: none;
@@ -2963,6 +2951,19 @@ table.text-center th {
  * Component: modal
  * ----------------
  */
+ .imagess {
+    width: 100% !important;
+    overflow: hidden;
+    height: 220px !important;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d; }
+    .imagess img {
+      width: 100% !important;
+		z-index:-100 !important;
+	  }
 .modal {
   background: rgba(0, 0, 0, 0.3);
 }
@@ -3263,9 +3264,14 @@ table.text-center th {
 .login-box-body,
 .register-box-body {
   background: #fff;
-  padding: 20px;
+  padding-bottom: 20px;
   border-top: 0;
   color: #666;
+}
+.negeti{
+	margin-top:-12%;
+	z-index:1000;
+	
 }
 .login-box-body .form-control-feedback,
 .register-box-body .form-control-feedback {

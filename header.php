@@ -1,12 +1,7 @@
   <header id="header" class="main-header">
-
-    <!-- Logo -->
-    <a href="index2.html" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>S</b>N</span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Social </b>Network</span>
-    </a>
+	
+	
+    
 
     <?php
 
@@ -19,9 +14,31 @@
     }
 
     ?>
+	<div class="user-panel logo">
+        <div class="pull-left image">
+          <?php 
+                $sql = "SELECT * FROM users WHERE id_user='$_SESSION[id_user]'";
+                $result = $conn->query($sql);
+                if($result->num_rows > 0) {
+                  $row = $result->fetch_assoc();
+                  if($row['profileimage'] != '') {
+                    echo '<img src="uploads/profile/'.$row['profileimage'].'" class="img-circle" alt="User Image">';
+                  } else {
+                    echo '<img src="dist/img/avatar5.png" class="img-circle" alt="User Image">';
+                  }
+                  $username = $row['name'];
+                }
+                ?>
+        </div>
+        <div class="pull-left info">
+          <p><?php echo $username; ?></p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
 
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
+	
       <!-- Sidebar toggle button-->
       <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
         <span class="sr-only">Toggle navigation</span>

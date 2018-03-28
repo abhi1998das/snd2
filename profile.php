@@ -49,7 +49,7 @@ $_SESSION['callFrom'] = "profile.php";
   <!-- jvectormap -->
   <!-- <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css"> -->
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="dist/css/AdminLTE.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
@@ -66,6 +66,7 @@ $_SESSION['callFrom'] = "profile.php";
   <!-- Google Font -->
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+		<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -94,7 +95,10 @@ $_SESSION['callFrom'] = "profile.php";
 
           <!-- Profile Image -->
           <div class="box box-primary">
-            <div class="box-body box-profile">
+		  <div class="imagess ">
+                                <img src="assets/img/background.jpg" alt="..."/>
+                            </div>
+            <div class="negeti">
             <?php 
                 $sql = "SELECT * FROM users WHERE id_user='$_SESSION[id_user]'";
                 $result = $conn->query($sql);
