@@ -95,9 +95,7 @@ $_SESSION['callFrom'] = "profile.php";
 
           <!-- Profile Image -->
           <div class="box box-primary">
-		  <div class="imagess ">
-                                <img src="assets/img/background.jpg" alt="..."/>
-                            </div>
+		  
             <div class="negeti">
             <?php 
                 $sql = "SELECT * FROM users WHERE id_user='$_SESSION[id_user]'";
