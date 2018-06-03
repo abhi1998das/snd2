@@ -1,0 +1,4 @@
+1)Opencv
+2)numpy
+3)PIL
+4)OS
