@@ -23,9 +23,9 @@ $customer = \Stripe\Customer::create(array(
 
 // Charge Customer
 $charge = \Stripe\Charge::create(array(
-  "amount" => 5000,
-  "currency" => "usd",
-  "description" => "Intro To React Course",
+  "amount" => 50000,
+  "currency" => "inr",
+  "description" => "subcribing to a movie",
   "customer" => $customer->id
 ));
 
